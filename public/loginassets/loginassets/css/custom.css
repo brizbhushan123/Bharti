@@ -1,0 +1,300 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+/*..............common styles..............*/
+body {margin: 0; padding: 0; font-size:18px; font-family: 'Open Sans', sans-serif; font-weight:400; color: #222222; }
+
+h1, h2, h3, h4, h5, h6 { margin:0 0 15px; padding:0; font-weight:500; line-height: 1.4; color:#222222;}
+h1{ font-size:40px;}
+h2{ font-size:35px;}
+h3{ font-size:30px;}
+h4{ font-size:25px;}
+h5{ font-size:20px;}
+h6{ font-size:16px;}
+p{font-size:15px; margin:0 0 10px;}
+img{ max-width: 100%;}
+a, img{ border:0; text-decoration: none; outline: none;}
+a, a:link, a:visited, a:focus, a:hover { color: #000; outline: none; text-decoration: none; transition:all 0.3s ease 0s;}
+a:hover{ text-decoration:none;}
+ul{margin: 0; padding: 0; list-style: none;}
+
+input, textarea, select{font-weight: 400; font-size: 1em; outline: none;padding:0;}
+input[type="submit"]{font-weight: 400; font-size: 1em; transition:all 0.3s ease 0s; outline: none;}
+
+ul{list-style: none;margin:0;padding:0;}
+
+::selection {background: #FC6D6D; color: #FFF;}
+::-moz-selection {background: #FC6D6D; color: #FFF;}
+
+/* --- for placeholder color --- */
+
+
+.left-side-content {
+    background: #fff;
+    padding: 20px;
+    border: 3px solid #6bb42d;
+    border-radius: 25px;
+}
+.main-logo {
+    width: 100%;
+    max-width: 635px;
+    margin: 20px auto;
+}
+
+.landing-wrapper {
+    height: 100vh;
+    padding: 15px 25px 0 25px;
+    overflow: hidden;
+    background: url(../images/main-bg.png) no-repeat center;
+    background-size: cover;
+}
+.login-field {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 3% auto 0;
+}
+.gold-partner img {
+    height: 55px;
+}
+
+.login-field input {
+    width: 100%;
+    margin-right: 10px;
+    background: #fff;
+    border: none;
+    padding: 0 15px;
+    height: 40px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 4px 1px #888888;
+}
+
+.login-field a {
+    background: #b1880a;
+    color: #fff;
+    width: 100px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    border-radius: 2px;
+    box-shadow: inset 2px -2px 2px 1px #584405, inset -1px 1px 2px 1px #ffdf7c;
+}
+
+.ssc-logo img {
+    max-width: 35%;
+}
+
+
+
+
+.conception-partner p, .gold-partner p, .silver-partner p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.bottom-content {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    box-shadow: 0 0 15px #000;
+}
+.right-side-content iframe {
+    width: 70%;
+    margin: 0 auto;
+    height: 42vh;
+}
+.main-logo img {
+    height: 30vh;
+}
+.live-dec span img {
+    width: 35px;
+    margin-right: 5px;
+}
+.live-dec span,.summit-time p {
+    font-size: 22px;
+    color: #42281b;
+    font-weight: 700;
+    margin-top: 0;
+}
+.conception-partner img {
+    max-width: 250px;
+}
+.gold-partner {
+    flex: 0 0 45%;
+    max-width: 45%;
+    text-align: center;
+    border-right: 3px solid #ccc;
+}
+.gold-partner img {
+    max-width: 355px;
+    width: 37%;
+}
+.silver-partner img.pm-logo {
+    height: 65px;
+}
+img.lo-logo {
+    height: 55px;
+}
+h3.title-welcome {
+    font-size: 40px;
+    font-weight: 700;
+    color: #056b34;
+    margin-bottom: 30px;
+}
+.silver-partner {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+}
+.conception-partner {
+  margin-bottom: 15px;
+}
+.ssc-logo.text-center {
+    margin-top: 30px;
+}
+
+
+/*Media Query css*/
+
+@media only screen and ( min-width:1601px ) {
+.silver-partner img.pm-logo {
+    height: 80px;
+}
+img.lo-logo {
+    height: 95px;
+}
+
+}
+
+@media only screen and ( min-width:1366px ) {
+
+}
+
+@media only screen and ( max-width:1366px ) {
+
+
+}
+
+@media only screen and ( max-width:1199px ) {
+
+}
+
+@media only screen and ( max-width: 1024px ) {
+.right-side-content iframe {
+    width: 100%;
+}
+
+}
+  
+@media only screen and ( max-width: 991px ) {
+.right-side-content iframe {
+    width: 100%;
+   height: 50vh;
+}
+.ssc-logo.text-center {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.conception-partner img {
+    max-width: 195px;
+}
+.bottom-content {
+    position: relative;
+    padding: 20px 0;
+}
+.landing-wrapper {
+    overflow: scroll;
+    padding: 60px 0px 0;
+    background-position: 20% 50%;
+}
+.bottom-content {
+    position: relative;
+    padding: 20px 0;
+    margin-top: 35px;
+}
+
+.gold-partner{border: none;}
+
+}
+
+@media only screen and ( max-width: 767px ) {
+.gold-partner {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.gold-partner ul li {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.gold-partner ul li img {
+    max-width: 70%;
+    margin-bottom: 10px;
+}
+.landing-wrapper {
+    overflow: scroll;
+    padding: 60px 0px 0;
+    background-position: 20% 50%;
+}
+.bottom-content {
+    position: relative;
+    padding: 20px 0;
+}
+.right-side-content iframe {
+    width: 100%;
+    margin: 0 auto;
+    height: 45vh;
+}
+.right-side-content.text-center {
+    margin-top: 35px;
+}
+.ssc-logo img {
+    max-width: 85%;
+}
+.login-field {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 5% auto 10%;
+}
+.conception-partner {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 25px 0;
+}
+
+
+
+
+}
+
+@media only screen and ( max-width: 667px ) {
+
+}
+
+@media only screen and ( max-width: 575px ) {
+
+}
+
+@media only screen and ( max-width: 360px ) {
+
+}
+@media only screen and ( max-width: 320px ) {
+
+}
+
+/*Media Query css*/
+
+
+
+
